@@ -123,7 +123,7 @@ public class PanneauJeu extends PanneauType{
 	private void cri() throws LineUnavailableException, UnsupportedAudioFileException, IOException
 	{
 		clip = AudioSystem.getClip();
-		AudioInputStream inputStream = AudioSystem.getAudioInputStream(new File("src/elementsJeu/wilhelm.wav"));
+		AudioInputStream inputStream = AudioSystem.getAudioInputStream(new File("src/elementsJeu/aou.wav"));
 		clip.open(inputStream);
 		clip.start();
 	}
@@ -166,7 +166,7 @@ public class PanneauJeu extends PanneauType{
 			ArrayList<Balle> ballesARetirer = new ArrayList<Balle> ();
 			ArrayList<Gens> gensARetirer = new ArrayList<Gens> ();
 			
-			// Générer nouveau gens
+			// GÃ©nÃ©rer nouveau gens
 			int hasard = (int) (Math.random()*20);
 			if (hasard == 0)
 			{
